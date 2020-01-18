@@ -30,7 +30,16 @@ function App() {
       />
       <Route
         path="/boring-stuff"
-        render={() => <Link to="/cool-stuff">go to cool stuff</Link>}
+        render={() => (
+          <div>
+            <div>
+              <Link to="/cool-stuff">go to cool stuff</Link>
+            </div>
+            <div>
+              <a href="/">go to gatsby part</a>
+            </div>
+          </div>
+        )}
       />
     </BrowserRouter>
   );
